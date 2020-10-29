@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30626.31
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VocaDb.BandcampMetadataExtractor", "VocaDb.BandcampMetadataExtractor\VocaDb.BandcampMetadataExtractor.csproj", "{ABB32063-6277-4D0C-988A-54E38EF37446}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VocaDb.BandcampMetadataExtractor.Tests", "VocaDb.BandcampMetadataExtractor.Tests\VocaDb.BandcampMetadataExtractor.Tests.csproj", "{0995DF4A-E0E5-4BD6-B12E-F1CD664A6071}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ABB32063-6277-4D0C-988A-54E38EF37446}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABB32063-6277-4D0C-988A-54E38EF37446}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABB32063-6277-4D0C-988A-54E38EF37446}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABB32063-6277-4D0C-988A-54E38EF37446}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0995DF4A-E0E5-4BD6-B12E-F1CD664A6071}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0995DF4A-E0E5-4BD6-B12E-F1CD664A6071}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0995DF4A-E0E5-4BD6-B12E-F1CD664A6071}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0995DF4A-E0E5-4BD6-B12E-F1CD664A6071}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {907C01D7-5A86-499A-B8D9-4D0500F2DE7B}
+	EndGlobalSection
+EndGlobal
