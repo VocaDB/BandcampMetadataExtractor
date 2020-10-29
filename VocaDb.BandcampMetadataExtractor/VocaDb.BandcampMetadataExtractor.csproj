@@ -4,6 +4,12 @@
     <TargetFramework>netstandard2.0</TargetFramework>
 	<LangVersion>preview</LangVersion>
 	<Nullable>enable</Nullable>
+	<Authors>VocaDB</Authors>
+	<PackageLicenseExpression>MIT</PackageLicenseExpression>
+	<PackageProjectUrl>https://github.com/VocaDB/BandcampMetadataExtractor</PackageProjectUrl>
+	<RepositoryUrl>https://github.com/VocaDB/BandcampMetadataExtractor</RepositoryUrl>
+	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	<Description>Bandcamp metadata extractor for C#</Description>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
