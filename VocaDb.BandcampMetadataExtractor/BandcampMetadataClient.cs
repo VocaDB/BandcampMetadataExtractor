@@ -75,7 +75,7 @@ namespace VocaDb.BandcampMetadataExtractor
 				Id = track.Id,
 				Thumbnail = thumbnail,
 				Title = title,
-				UploadDate = DateTime.TryParse(timestamp, out var uploadDate) ? uploadDate.ToUniversalTime().ToString("yyyyMMdd") : null,
+				UploadDate = DateTimeOffset.TryParse(timestamp, out var uploadDate) ? uploadDate.ToUniversalTime().ToString("yyyyMMdd") : null,
 				Uploader = artist,
 				WebpageUrl = url,
 			};
