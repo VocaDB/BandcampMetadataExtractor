@@ -10,6 +10,7 @@
 	<RepositoryUrl>https://github.com/VocaDB/BandcampMetadataExtractor</RepositoryUrl>
 	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 	<Description>Bandcamp metadata extractor for C#</Description>
+	<Version>1.0.1</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
