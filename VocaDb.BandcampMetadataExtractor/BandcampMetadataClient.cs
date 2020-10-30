@@ -6,6 +6,7 @@ using System.Net.Http;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Web;
+using AngleSharp.Html.Dom;
 using AngleSharp.Html.Parser;
 using Newtonsoft.Json.Linq;
 
@@ -22,10 +23,11 @@ namespace VocaDb.BandcampMetadataExtractor
 			public string? Title { get; init; }
 		}
 
-		private JObject ExtractJsonFromHtmlDataAttribute(string webpage, string suffix)
+		private JObject ExtractJsonFromHtmlDataAttribute(IHtmlDocument document, string suffix)
 		{
-			var match = Regex.Match(webpage, $@" data-{suffix}=""([^""]*)");
-			return JObject.Parse(HttpUtility.HtmlDecode(match.Groups[1].Value));
+			var name = $"data-{suffix}";
+			var match = document.QuerySelector($"[{name}]");
+			return JObject.Parse(HttpUtility.HtmlDecode(match.Attributes[name].Value));
 		}
 
 		private TrackInfo ParseJsonTrack(JToken json)
@@ -49,8 +51,8 @@ namespace VocaDb.BandcampMetadataExtractor
 			var document = await parser.ParseDocumentAsync(webpage).ConfigureAwait(false);
 			var thumbnail = document.QuerySelector(@"meta[property~=""og:image""]").Attributes["content"].Value;
 
-			var jsonTralbum = ExtractJsonFromHtmlDataAttribute(webpage, "tralbum");
-			var jsonEmbed = ExtractJsonFromHtmlDataAttribute(webpage, "embed");
+			var jsonTralbum = ExtractJsonFromHtmlDataAttribute(document, "tralbum");
+			var jsonEmbed = ExtractJsonFromHtmlDataAttribute(document, "embed");
 
 			var jsonTracks = jsonTralbum["trackinfo"] ?? throw new FormatException("Could not extract track");
 
