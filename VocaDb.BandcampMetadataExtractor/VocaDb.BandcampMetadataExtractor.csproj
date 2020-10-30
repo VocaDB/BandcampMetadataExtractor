@@ -13,11 +13,11 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>C:\Users\Aigamo\source\repos\VocaDb.BandcampMetadataExtractor\VocaDb.BandcampMetadataExtractor\VocaDb.BandcampMetadataExtractor.xml</DocumentationFile>
+    <DocumentationFile>VocaDb.BandcampMetadataExtractor.xml</DocumentationFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>C:\Users\Aigamo\source\repos\VocaDb.BandcampMetadataExtractor\VocaDb.BandcampMetadataExtractor\VocaDb.BandcampMetadataExtractor.xml</DocumentationFile>
+    <DocumentationFile>VocaDb.BandcampMetadataExtractor.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
